@@ -1,0 +1,38 @@
+[
+    {"id": "americano","name": "Americano", "price": "$1.50", "type": "hotCoffee" ,"img": "./assets/res/americano.webp"},
+
+    {"id": "latte","name": "Latte", "price": "$4.99", "type": "coldCoffee" ,"img": "./assets/res/latte.webp"},
+
+    {"id": "frappe","name": "Frappe", "price": "$5.50", "type": "coldCoffee" ,"img": "./assets/res/frappe.webp"},
+
+    {"id": "espresso","name": "Espresso", "price": "$1.99", "type": "hotCoffee" ,"img": "./assets/res/espresso.webp"},
+
+    {"id": "cappuccino","name": "Cappuccino", "price": "$3.99", "type": "hotCoffee" ,"img": "./assets/res/cappuccino.webp"},
+
+    {"id": "mocha","name": "Mocha", "price": "$5.50", "type": "coldCoffee" ,"img": "./assets/res/coffee-mocha.webp"},
+
+    {"id": "blackCoffe","name": "Black Coffee", "price": "$0.99", "type": "hotCoffee" ,"img": "./assets/res/black-coffee.webp"},
+
+    {"id": "decaf","name": "Decaf", "price": "$2.10", "type": "hotCoffee" ,"img": "./assets/res/decaf.webp"},  
+
+    {"id": "coldBrew","name": "Cold Brew", "price": "$4.20", "type": "coldCoffee" ,"img": "./assets/res/cold-brew.webp"},
+
+    {"id": "cacao","name": "Cacao", "price": "$3.50", "type": "hotCoffee" ,"img": "./assets/res/cacao.webp"},
+
+    {"id": "irlandes","name": "Irlandes", "price": "$4.99", "type": "hotCoffee" ,"img": "./assets/res/irlandes.webp"},
+
+    {"id": "breve","name": "Breve", "price": "$4.50", "type": "hotCoffee" ,"img": "./assets/res/breve.webp"},
+
+    {"id": "cortado","name": "Cortado", "price": "$3.50", "type": "hotCoffee" ,"img": "./assets/res/cortado.webp"},
+
+    {"id": "affogato","name": "Affogato", "price": "$7.50", "type": "coldCoffee" ,"img": "./assets/res/affogato.webp"}, 
+
+    {"id": "ristretto ","name": "Ristretto", "price": "$2.99", "type": "hotCoffee" ,"img": "./assets/res/ristretto.webp"},
+    
+    {"id": "irishIced ","name": "Irish Iced", "price": "$6.99", "type": "coldCoffee" ,"img": "./assets/res/irish-cold.webp"},
+    
+    {"id": "icedCappuccino ","name": "Iced Cappuccino ", "price": "$4.50", "type": "coldCoffee", "info": "The Iced Cappuccino is a cold drink made with espresso, foamed milk and ice, perfect for cooling off on hot days." ,"img": "./assets/res/cappuccino.webp"},
+    
+    {"id": "ristretto ","name": "Ristretto ", "price": "$2.99", "type": "hotCoffee" ,"img": "./assets/res/ristretto.webp"}
+
+]

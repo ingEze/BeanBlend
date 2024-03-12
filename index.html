@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeanBlend</title>
+    <link rel="shortcut icon" href="assets/BeanBlend.png" type="image/x-icon">
+    <link rel="stylesheet" href="animations/animation.css">
+    <link rel="stylesheet" href="css/style-dist.css">
+</head>
+<body>
+    
+    <div class="container">
+
+            <header class="header" id="inicio">
+                <div class="h__left">                    
+                    <img src="assets/BeanBlend.png" alt="BeanBlend" class="logo" >
+                    <div class="navbar__menu">
+                        <i class="fa-solid fa-bars menu__icon " aria-hidden="true"></i>
+                        <!-- <i class="fa fa-times-circle"></i> -->
+                    </div>
+                </div>
+
+                <nav class="navbar">
+
+                    <ul class="navbar__ul">
+                        <li class="navbar__li hidden"><a class="active" href="#main"><i class="fa-solid fa-home navbar__icon"></i>Home</a></li>
+                        <li class="navbar__li hidden"><a href="#popular"><i class="fa-solid fa-fire navbar__icon"></i>Popular</a></li>
+                        <li class="navbar__li hidden"><a href="pages/menu.html"><i class="fa-solid fa-mug-hot navbar__icon"></i>Menu</a></li>
+                        <li class="navbar__li hidden"><a href="#"><i class="fa-solid fa-user-tie navbar__icon"></i>About Me</a></li>
+                        <li class="navbar__li"><div class="search__box">
+                            <i id="searchIcon" class="fa-solid fa-magnifying-glass navbar__icon search__icon "></i>
+                            <input type="text" class="input__search" id="search" placeholder="Search...">
+                            <i class="fa-solid fa-x navbar__icon"></i>
+                        </div></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="results__container"></div> 
+
+            <!-- Hero -->
+
+            <div class="hero">
+
+                <div class="slide ">
+                    <img class="hero__img slide__img" src="assets/img/hero1.webp" alt="Coffee Time">
+                    <img class="hero__img slide__img" src="assets/img/hero2.webp" alt="Cappuccino">
+                    <img class="hero__img slide__img" src="assets/img/hero3.webp" alt="Coffee">
+                    <div class="slide__arrow right arrow__style">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="slide__arrow left arrow__style">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                </div>
+                <h2 class="hero__text title">BeanBlend</h2>
+            </div>
+
+            <div class="comment">
+                <h4 class="comment__text">Do you want to enjoy a good coffee?</h4>
+                <p class="comment_p">Welcome to BeanBlend.</p>
+            </div>
+            <!-- second hero -->
+            
+            <div class="hero relative">
+                <img src="assets/img/secondHero.webp" alt="" class="hero__img second">
+                <div class="hero__text--absolute">
+                    <h2 class="hero__text">The best place to enjoy coffee.</h2>
+                </div>
+            </div>
+            
+            <!-- Popular  -->
+
+            <section id="popular">
+
+                <div class="popular__title--absolute">
+                    <h2 class="section__title section__title--popular"><i class="fa-solid fa-fire"></i>Popular</h2>
+                </div>
+
+                <div class="popular__cards">
+                    <img src="assets/img/cappuccino.webp" alt="Cappuccino" class="popular__card">
+                    <span class="popular__card--text">Cappuccino</span>
+                </div>
+
+                <div class="popular__cards">
+                    <img src="assets/img/latte.webp" alt="latte" class="popular__card">
+                    <span class="popular__card--text">Latte</span>
+                </div>
+
+                <div class="popular__cards">
+                    <img src="assets/img/expreso.webp" alt="Expresso" class="popular__card">
+                    <span class="popular__card--text">Expresso</span>
+                </div>
+            </section>
+
+            <!-- Menu -->
+
+            <section id="menu">
+                <div class="menu__title--absolute">
+                    <h2 class=" section__title section__title--menu"><i class="fa-solid fa-mug-hot navbar__icon"></i>Menu</h2>
+                </div>
+
+                <div class="query">
+                    <div class="menu__cards">
+                        <img src="assets/img/menu1.png" alt="" class="menu__card">
+                        <img src="assets/img/menu2.png" alt="" class="menu__card">
+                        <img src="assets/img/menu3.png" alt="" class="menu__card">
+
+                        <div class="menu__arrow right arrow__style">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                        <div class="menu__arrow left arrow__style">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+
+                    </div>
+    
+                    <div class="menu__text">
+                        <p class="menu__text--paragraph">Explore our website to discover <span class="menu__text--highlight">the best coffees</span>. Exceptional quality that will delight your senses.<span class="text__p--highlight"> Choose the best and enjoy!</span></p>
+                    </div>
+                    
+                </div>
+
+                <div class="btn--container">
+                    <button class="btn btn--menu">Menu</button>
+                </div>
+
+            </section>
+
+            
+            <!-- About Me: website -->
+            
+            <div class="btn--container website">
+                <button class="btn btn--website">Get to know the features of this website</button>
+            </div>
+            
+            <footer class="footer">
+
+                <div class="footer__open">
+                    <h4 class="footer__text">Open from:</h4>
+                    <ul class="footer__ul">
+                        <li class="footer__li">Monday - Friday: 7am - 6pm</li>
+                        <li class="footer__li">Saturday: 8am - 8pm</li>
+                        <li class="footer__li">Sunday: 8am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="social__media">
+                    <h4 class="footer__text">Follow me</h4>
+                    <div class="social__media--icon">
+                        <a href="" data-socialMedia="X"><i class="fa-brands fa-x-twitter" ></i></a>
+                        <a href="" data-socialMedia="Google"><i class="fa-brands fa-google" ></i></a>
+                        <a href="" data-socialMedia="Instagram"><i class="fa-brands fa-square-instagram" ></i></a>
+                        <a href="" data-socialMedia="GitHub"><i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="copy">
+                    <p class="copy__text">&copy; backEzequiel | 2024</p>
+                </div>
+
+            </footer>
+            
+        </div>
+        <div class="arrow__up">
+            <a  href="#inicio" id="backToTop"><i class="fa fa-arrow-up" data-up="Home" aria-hidden="true"></i></a>
+        </div>
+
+    <script src="https://kit.fontawesome.com/9a26041bce.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

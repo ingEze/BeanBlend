@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | BeanBlend</title>
+    <link rel="shortcut icon" href="../assets/BeanBlend.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="../animations/animation.css">
+</head>
+<body>
+    
+    <div class="float__container">
+        <i class="fa-solid fa-circle-xmark float__cancel"></i>
+        <img src="../assets/res/americano.webp" alt="" class="float__img">
+        <h2 class="float__title">Americano</h2>
+        <div class="float__info">
+            <h4 class="float__price">$1.50</h4>
+            <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, obcaecati.</p>
+            <button class="float__btn">Add</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        
+
+
+        <!-- Header -->
+
+        <header class="header">
+            <div class="h__left" data-hover="Home"><a href="../index.html"><i class="fa-solid fa-house home"></i></a></div>
+
+            <div class="h__center">
+                <a href="menu.html">
+                    <img src="../assets/BeanBlend.png" alt="BeanBlend" class="logo">
+                    <h1 class="title">BeanBlend</h1>
+                </a>
+            </div>
+
+            <div class="h__right">
+                <i class="fa-solid fa-cart-shopping market" id="market"><span class="market--item">0</span></i>
+            </div>
+            
+        </header>
+
+        <!-- Menu -->
+
+        <div class="menu">
+
+            <div class="menu__title">
+                <h2 class="title">Menu</h2>
+            </div>
+            
+            <div class="user__interaction">
+
+                <div class="search__box">
+                    <input type="text" name="searchInput" id="searchInput" class="search__input" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass search__icon" id="searchIcon"></i>
+                    <i class="fa-solid fa-circle-xmark cancel__search"></i>
+                </div>
+
+                <select name="filter" id="filter" class="filter">
+                    <option value="All" id="typeAllCoffee" class="filter__option">All</option>
+                    <option value="hotCoffee" id="typeHotCoffee" class="filter__option">Hot coffee</option>
+                    <option value="coldCoffee" id="typeColdCoffee" class="filter__option">Cold coffee</option>
+                </select>
+
+            </div>
+
+            <div class="cards" id="cards">
+                
+            </div>
+
+        </div>
+
+        <!-- footer -->
+
+        <footer class="footer">
+            <div class="footer__open">
+                <h4 class="footer__text">Open from:</h4>
+                <ul class="footer__ul">
+                    <li class="footer__li">Monday - Friday: 7am - 6pm</li>
+                    <li class="footer__li">Saturday: 8am - 8pm</li>
+                    <li class="footer__li">Sunday: 8am - 6pm</li>
+                </ul>
+            </div>
+
+            <div class="copy">
+                <p class="copy__text">&copy; backEzequiel | 2024</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/9a26041bce.js" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
