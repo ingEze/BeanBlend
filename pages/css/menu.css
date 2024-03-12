@@ -11,6 +11,7 @@
     --card: #fdefe185;
     --checked: #ffe8aa;
     --hover-dark: #272727;
+    --red: #ea4335;
 }
 
 *{
@@ -57,10 +58,12 @@ li {
     position: fixed;
     top: 50%; 
     left: 50%; 
+    max-width: 460px;
     width: 90%;
     padding: 40px 10px;
-    border: 10px solid var(--hover-dark);
+    border: 10px solid var(--grey);
     border-radius: 20px;
+    box-shadow: 0px 0px 30px var(--body);
     line-height: 2;
     font-size: 1.3em;
     font-weight: 600;
@@ -310,7 +313,7 @@ li {
 }
 
 .cancel__search:hover {
-    color: #ea4335;
+    color: var(--red);
 }
 
 /* not found */
@@ -323,7 +326,7 @@ li {
 }
 
 .fa-exclamation-triangle{
-    color: #ea4335;
+    color: var(--red);
     margin-right: 5px;
 }
 
@@ -640,5 +643,73 @@ Laptops y desktops: 1280px y más. Ejemplos: MacBook Pro, iMac. */
         flex-direction: column;
         padding: 25px 20px;
     }
+    
+    /* market */
+    .market__container {
+        display: none;
+        position: fixed;
+        bottom: 0 ;
+        right: 10px;
+        width: 20%;
+        padding: 15px 13px;
+        border-radius: 15px;
+        font-size: 1.1em;
+        font-weight: 600;
+        background-color: var(--grey);
+        color: var(--clr-font);
+    }
 
+    .marketActive {
+        animation: marketActive .3s ease-in-out;
+    }
+    
+    .cancel__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cancel__text {
+        font-size: 20px;
+    }
+
+    .market__cancel {
+        padding: 10px;
+        font-size: 23px;
+        cursor: pointer;
+        color: var(--red);
+    }
+
+    .market__card {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 7px;
+        padding-top: 15px;
+        margin-block: 10px;
+        border: 2px solid var(--clr-font);
+        border-radius: 5px;
+        background-color: var(--bg-menu);
+    }
+
+    .card__left {
+        position: relative;
+    }
+    
+    .span__product {
+        position: absolute;
+        top: -13px;
+        left: -5px;
+        padding: 7px;
+        border-radius: 50%;
+        font-size: 15px;
+        background-color: var(--grey);  
+        color: var(--clr-font);
+    }
+
+    .fa-trash {
+        color: var(--red);
+        padding: 15px;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
 }

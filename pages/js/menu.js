@@ -38,8 +38,36 @@ function viewList(coffeeArray) {
 
         const addProductButton = card.querySelector('.add__product');
         addProductButton.addEventListener('click', (event) => {
-            event.stopPropagation(); // Detener la propagación del evento para evitar que se ejecute la función en la tarjeta
+            event.stopPropagation();
+            addCardMarket(addProductButton)
         });
+
+        const marketCancel = document.querySelector('.market__cancel');
+        const marketContainer = document.querySelector('.market__container');
+        marketContainer.style.display = 'none';
+        const marketIcon = document.querySelector('#market');
+        const minWidth = 1024;
+
+
+        function marketActive() {
+            marketIcon.addEventListener('click', function() {
+                if (!marketContainer.classList.contains('marketActive')) {
+                    marketContainer.style.display = 'block';
+                    marketContainer.classList.add('marketActive');
+                }
+            });
+            
+            marketCancel.addEventListener('click', () => {
+                marketContainer.style.display = 'none';
+                marketContainer.classList.remove('marketActive');
+            });
+        }
+        
+        if (window.innerWidth > minWidth) {
+            marketActive();
+        }
+
+    // card
 
         card.addEventListener('click', () => {
             createCard(coffee);
@@ -52,7 +80,7 @@ function viewList(coffeeArray) {
                 cancelFloat.classList.add('active');
                 floatContainer.classList.add('active');
             }
-
+            
             cancelFloat.addEventListener('click', () => {
                 if (container.classList.contains('hidden')) {
                     container.classList.remove('hidden');
@@ -60,11 +88,39 @@ function viewList(coffeeArray) {
                     floatContainer.classList.remove('active');
                 }
             });
-
         });
+                
     });
 }
 
+function addCardMarket(cardArray) {
+    cardArray.forEach(coffee => {
+        const marketCard = document.createElement('div');
+        marketCard.classList.add('market__card');
+        marketCard.innerHTML = `
+        <div class="card__left">
+            <img src=".${coffee.img}" alt="${coffee.name}" class="card__img">
+            <p class="card__name">${coffee.name}</p>
+            <span class="span__product">0</span>
+        </div>
+        <div class="card__right">
+            <div class="card__price">
+                <p class="price">${coffee.price}</p>
+            </div>
+            <div class="remove__product">
+                <i class="fa fa-trash" aria-hidden="true" id="removeProduct"></i>
+            </div>
+        </div>    
+        `;
+        marketContainer.appendChild(marketCard)
+        
+        const listMark = [];
+            addProductBtn.addEventListener('click', () => {
+                listMark.push(listMark); // Agregar el producto al array
+                console.log('Producto añadido:', listMark);
+            });
+    })
+}
 
 function createCard(coffee) {
     const floatContainer = document.querySelector('.float__container');
